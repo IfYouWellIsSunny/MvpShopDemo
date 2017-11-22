@@ -65,6 +65,9 @@ public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.IViewHolder> {
                     list.get(i).setIsFirst(2);
                 }else {
                     list.get(i).setIsFirst(1);
+                   if(list.get(i).isItemSelected()){
+                        list.get(i).setShopSelected(list.get(i).isItemSelected());
+                    }
                 }
 
             }
